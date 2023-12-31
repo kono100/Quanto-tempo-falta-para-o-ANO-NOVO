@@ -1,9 +1,13 @@
 from datetime import timedelta, datetime
 import time
+# import os
 
 print()
 print("Contagem Regressiva para o Ano Novo")
 print()
+
+
+
 
 try:
     while True:
@@ -28,6 +32,23 @@ try:
 
         if relembrar_segundos > 0:
             mensagem += f'{relembrar_segundos} {"segundos" if relembrar_segundos > 1 else "segundo"}'
+
+
+        from datetime import datetime
+
+        # Obtém a data e hora atual
+        agora = datetime.now()
+
+        # Verifica se é 31 de dezembro às 23 : 59 : 59
+        if agora.month == 12 and agora.day == 31 and agora.hour == 23 and agora.minute == 59 and agora.second == 59:
+            print("\n\n Feliz Ano Novo ! \n\n")
+
+                
+
+
+
+
+        # os.system('cls')  
 
         print(mensagem)
 
