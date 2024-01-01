@@ -8,7 +8,6 @@ print()
 
 
 
-
 try:
     while True:
         data_hoje = datetime.today()
